@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="estilo.css">
+    <title>Formulario</title>
+</head>
+
+<body>
+<div class="container">
+  <h2>Formulário cadastro aluno</h2>
+       <form action="inserir.php" method="POST">
+        <fieldset>
+        <legend>Preencha os dados</legend>
+            <div class="dados">
+                <label for="nome">Nome:</label>
+                <input type="text" placeholder="Digite seu nome" name="nome" id="nome">
+
+                <label for="endereco">Endereço:</label>
+                 <input type="text" placeholder="Digite seu endereço" name="endereco" id="endereco">
+
+                 <label for="matricula">Matricula:</label>
+                 <input type="number" placeholder="Digite sua matricula" name="matricula" id="matricula">
+            </div>
+        </fieldset>
+        <button class="enviar" type="submit"  disabled="disabled"> Enviar </button>
+      </form> 
+      <div class="imagem">
+        <img src="client-server.png" alt="serve">
+     </div>
+</div>
+<footer><strong> Developer </strong> Allan Oliveira </footer>
+<script src="btn.js"></script>
+</body>
+
+</html>
